@@ -1,0 +1,44 @@
+[MAIN]
+# Use multiple processes to speed up pylint
+jobs = 1
+
+# Allow loading of all C extensions
+unsafe-load-any-extension = no
+
+[MESSAGES CONTROL]
+# Disable specific messages
+disable =
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length = 120
+
+# Number of spaces of indent required inside a hanging or continued line
+indent-after-paren = 4
+
+# String used as indentation unit (2 spaces for this project)
+indent-string = '  '
+
+# Expected format of line ending, e.g. empty (any), LF or CRLF
+expected-line-ending-format = LF
+
+[BASIC]
+# Naming style matching PEP 8
+function-naming-style = camelCase
+variable-naming-style = snake_case
+argument-naming-style = snake_case
+class-naming-style = PascalCase
+const-naming-style = UPPER_CASE
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args = 6
+
+# Maximum number of return / yield for function / method body
+max-returns = 6
+
+# Maximum number of statements in function / method body
+max-statements = 50
